@@ -43,7 +43,7 @@ function loadpage () {
          loaded_numb = loaded ? loaded + 1: 1;
      localStorage.setItem('loaded', loaded_numb);
 
-     document.getElementById=('<p>This page was loaded by you '+loaded_numb+' times !</p>');
+     document.getElementById('loaded').innerHTML='<p>This page was loaded by you '+loaded_numb+' times !</p>';
 };
 
 loadpage()
